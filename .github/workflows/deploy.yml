@@ -36,7 +36,6 @@ jobs:
         working-directory: web-frontend
         run: npm run build
         env:
-          VITE_API_URL: ${{ secrets.API_URL || 'http://localhost:8000/api' }}
           VITE_BASE_URL: /Chemical-Equipment-Analyzer/
       
       - name: Setup Pages
