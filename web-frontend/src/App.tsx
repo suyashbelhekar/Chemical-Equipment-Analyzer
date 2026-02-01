@@ -175,7 +175,6 @@ function App() {
     try {
       showToast('Generating PDF report with charts...', 'info')
       const jsPDF = (await import('jspdf')).jsPDF
-      const html2canvas = (await import('html2canvas')).default
       
       const pdf = new jsPDF('p', 'mm', 'a4')
       const pageWidth = pdf.internal.pageSize.getWidth()
