@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/Chemical-Equipment-Analyzer/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chemical Equipment Analyzer</title>
+    <script>
+      // GitHub Pages redirect for client-side routing
+      var pathSegmentsToKeep = 1;
+      var l = window.location;
+      l.replace(
+        l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
+        '/Chemical-Equipment-Analyzer/index.html?p=' +
+        l.pathname.slice(0, l.pathname.indexOf('/', 1) + 1).slice(1).split('/').slice(0, pathSegmentsToKeep).join('/') +
+        '&q=' + l.search.slice(1)
+      );
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/Chemical-Equipment-Analyzer/src/main.tsx"></script>
+  </body>
+</html>
